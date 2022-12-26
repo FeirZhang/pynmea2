@@ -243,6 +243,7 @@ class GSA(TalkerSentence, ValidGSAFix):
         ('PDOP (Dilution of precision)', 'pdop'),
         ('HDOP (Horizontal DOP)', 'hdop'),
         ('VDOP (Vertical DOP)', 'vdop'),
+        ('System ID', 'system_id', int)                 # 自定义
     )
 
 
@@ -280,6 +281,7 @@ class GSV(TalkerSentence):
         ('Elevation in degrees 4', 'elevation_deg_4'), # 90 max
         ('Azimuth, deg from true north 4', 'azimuth_4'), # 000 to 159
         ('SNR 4', 'snr_4'),
+        ('System ID', 'system_id', int)      #自定义
     )  # 00-99 dB
 
 
